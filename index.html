@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Floxeen - Make Simple Cleaner</title>
-  <meta name="description" content="Floxeen - Cairan pembersih motor premium. Bikin motor kinclong lagi tanpa ribet." />
+  <title>Floxeen - Make Simple Cleaner | Cairan Pembersih Motor Premium</title>
+  <meta name="description" content="Floxeen adalah cairan pembersih motor premium dengan formula konsentrat yang ampuh angkat kotoran tanpa merusak cat. Bikin motor kinclong tanpa ribet.">
+  <meta name="keywords" content="floxeen, cairan pembersih motor, pembersih cat motor, shampoo motor, cleaner motor, perawatan motor, kinclong tanpa ribet">
+  <meta name="author" content="Floxeen Indonesia">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -22,76 +24,74 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
+
     header {
       text-align: center;
       background: var(--white);
-      padding: 40px 20px;
+      padding: 50px 20px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
-    header img {width: 140px;}
+    header img {width: 150px;}
     header h1 {margin: 10px 0 5px; color: var(--blue);}
     header p {margin: 0; color: #444;}
+
     .banner {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      padding: 20px;
-      scroll-snap-type: x mandatory;
-      justify-content: center;
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .banner img {
-      width: 90%;
-      max-width: 900px;
-      height: auto;
+      width: 100%;
+      display: none;
       border-radius: 12px;
-      scroll-snap-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      animation: zoomIn 1.2s ease-in-out;
+      animation: fade 1.5s ease-in-out;
+    }
+    .banner img.active {
+      display: block;
+    }
+    @keyframes fade {
+      from {opacity: 0.4;}
+      to {opacity: 1;}
     }
 
-    /* Section styling */
     section {
       max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
       text-align: center;
-      background: transparent;
     }
     section h2 {
       color: var(--blue);
       margin-bottom: 20px;
       font-size: 26px;
     }
-
-    .about p {
+    section p {
       color: #444;
       font-size: 16px;
-      animation: fadeUp 1s ease;
-      max-width: 880px;
-      margin: 12px auto 0 auto;
     }
 
     .reasons {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 25px;
       margin-top: 30px;
     }
     .reason {
       background: var(--white);
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
       width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
       transition: 0.3s;
-      animation: fadeUp 1s ease;
+      animation: fadeIn 1.5s ease;
     }
     .reason:hover {transform: translateY(-8px);}
-    .reason h3 {color: var(--blue); margin-top: 10px; font-size: 18px;}
+    .reason h3 {color: var(--blue); margin-top: 10px;}
 
     .produk-grid {
       display: grid;
@@ -112,25 +112,24 @@
       width: 100%;
       border-radius: 10px;
     }
-    .produk-card h3 {margin-top: 10px; color: var(--dark); font-size: 16px;}
+    .produk-card h3 {margin-top: 10px; color: var(--dark);}
 
     .cta {
       text-align: center;
-      margin: 40px 0;
+      margin: 50px 0;
     }
     .cta a {
       text-decoration: none;
       background: var(--blue);
       color: var(--white);
-      padding: 15px 35px;
+      padding: 14px 36px;
       border-radius: 30px;
       font-weight: 600;
-      transition: background 0.3s, transform 0.2s;
-      display: inline-block;
+      transition: 0.3s;
     }
     .cta a:hover {
       background: #0b4f70;
-      transform: translateY(-3px);
+      transform: scale(1.05);
     }
 
     footer {
@@ -146,46 +145,44 @@
       font-weight: 600;
     }
 
-    /* Animations */
     @keyframes zoomIn {
       from {opacity: 0; transform: scale(0.95);}
       to {opacity: 1; transform: scale(1);}
     }
-    @keyframes fadeUp {
-      from {opacity: 0; transform: translateY(40px);}
-      to {opacity: 1; transform: translateY(0);}
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
     }
 
-    /* Responsive tweaks */
-    @media (max-width: 900px) {
-      .banner img {height: auto; max-width: 95%;}
-      header img {width: 120px;}
+    /* Responsive */
+    @media (max-width:900px){
+      header img{width:130px}
+      .banner{margin:24px 12px}
     }
-    @media (max-width: 520px) {
-      section {padding: 30px 16px;}
-      .produk-card h3 {font-size: 15px;}
+    @media (max-width:520px){
+      section{padding:28px 14px}
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="Floxeen Logo">
+    <img src="logo.jpeg" alt="Floxeen Logo">
     <h1>Floxeen</h1>
     <p>Make Simple Cleaner</p>
   </header>
 
-  <div class="banner" aria-label="Banner Floxeen">
-    <img src="Banner 1.jpeg" alt="Banner 1">
+  <div class="banner">
+    <img src="Banner 1.jpeg" class="active" alt="Banner 1">
     <img src="Banner 2.jpeg" alt="Banner 2">
     <img src="Banner 3.jpeg" alt="Banner 3">
   </div>
 
   <section class="about" id="about">
     <h2>Tentang Kami</h2>
-    <p>Floxeen adalah cairan pembersih motor premium dengan formula konsentrat yang ampuh angkat kotoran tanpa merusak cat.
-      Dirancang untuk lo yang peduli tampilan, performa, dan kebersihan kendaraan.
-      Floxeen – Cairan pembersih motor premium, bikin motor kinclong lagi tanpa ribet.</p>
+    <p>Floxeen adalah cairan pembersih motor premium dengan formula konsentrat yang ampuh angkat kotoran tanpa merusak cat. 
+      Dirancang untuk lo yang peduli tampilan, performa, dan kebersihan kendaraan. 
+      Floxeen – Cairan pembersih motor premium, bikin motor kinclong tiap kali dicuci.</p>
   </section>
 
   <section class="why">
@@ -235,6 +232,22 @@
     </p>
     <p style="margin-top:15px;">&copy; 2025 Floxeen. All rights reserved.</p>
   </footer>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('.banner img');
+    function showSlide(index) {
+      slides.forEach((img, i) => {
+        img.classList.remove('active');
+        if (i === index) img.classList.add('active');
+      });
+    }
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+    setInterval(nextSlide, 3000);
+  </script>
 
 </body>
 </html>
