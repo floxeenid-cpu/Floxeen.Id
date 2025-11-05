@@ -3,10 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✅ Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Floxeen",
+  "image": "https://floxeenid-cpu.github.io/Floxeen.Id/logo.jpeg",
+  "@id": "https://floxeenid-cpu.github.io/Floxeen.Id/",
+  "url": "https://floxeenid-cpu.github.io/Floxeen.Id/",
+  "telephone": "+62881010878926",
+  "email": "floxeen.id@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "ID"
+  },
+  "sameAs": [
+    "https://www.instagram.com/floxeen.id/",
+    "https://shopee.co.id/floxeen.id",
+    "https://floxeen.my.canva.site/"
+  ],
+  "description": "Floxeen adalah cairan pembersih motor premium dengan formula konsentrat yang ampuh angkat kotoran tanpa merusak cat.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Floxeen",
+    "logo": "https://floxeenid-cpu.github.io/Floxeen.Id/logo.jpeg"
+  }
+}
+</script>
+</head>
+
   <title>Floxeen - Make Simple Cleaner | Cairan Pembersih Motor Premium</title>
+
+  <!-- ✅ SEO META TAG -->
   <meta name="description" content="Floxeen adalah cairan pembersih motor premium dengan formula konsentrat yang ampuh angkat kotoran tanpa merusak cat. Bikin motor kinclong tanpa ribet.">
-  <meta name="keywords" content="floxeen, cairan pembersih motor, pembersih cat motor, shampoo motor, cleaner motor, perawatan motor, kinclong tanpa ribet">
+  <meta name="keywords" content="floxeen, make simple cleaner, cairan pembersih motor, sabun motor, shampoo motor, cleaner motor, perawatan motor, kinclong tanpa ribet">
   <meta name="author" content="Floxeen Indonesia">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Open Graph (tampil keren di WhatsApp, IG, dll) -->
+  <meta property="og:title" content="Floxeen - Make Simple Cleaner" />
+  <meta property="og:description" content="Cairan pembersih motor premium, bikin motor kinclong tanpa ribet." />
+  <meta property="og:image" content="https://floxeenid-cpu.github.io/Floxeen.Id/logo.jpeg" />
+  <meta property="og:url" content="https://floxeenid-cpu.github.io/Floxeen.Id/" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Schema Data (Google Rich Snippet) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Floxeen",
+    "url": "https://floxeenid-cpu.github.io/Floxeen.Id/",
+    "logo": "https://floxeenid-cpu.github.io/Floxeen.Id/logo.jpeg",
+    "sameAs": [
+      "https://www.instagram.com/floxeen.id/",
+      "https://shopee.co.id/floxeen.id",
+      "https://wa.me/62881010878926"
+    ]
+  }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -154,7 +211,6 @@
       to {opacity: 1;}
     }
 
-    /* Responsive */
     @media (max-width:900px){
       header img{width:130px}
       .banner{margin:24px 12px}
@@ -164,10 +220,10 @@
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <img src="logo.png" alt="Floxeen Logo">
+    <img src="logo.jpeg" alt="Floxeen Logo">
     <h1>Floxeen</h1>
     <p>Make Simple Cleaner</p>
   </header>
@@ -179,10 +235,10 @@
   </div>
 
   <section class="about" id="about">
-    <h2>Tentang Kami</h2>
-    <p>Floxeen adalah cairan pembersih motor premium dengan formula konsentrat yang ampuh angkat kotoran tanpa merusak cat. 
-      Dirancang untuk lo yang peduli tampilan, performa, dan kebersihan kendaraan. 
-      Floxeen – Cairan pembersih motor premium, bikin motor kinclong tiap kali dicuci.</p>
+    <h2>Tentang Floxeen</h2>
+    <p><strong>Floxeen</strong> adalah cairan pembersih motor premium buatan lokal yang hadir untuk lo yang peduli tampilan dan kebersihan kendaraan. 
+      Formula konsentratnya ampuh angkat kotoran tanpa merusak cat, bikin motor selalu kinclong tanpa ribet. 
+      Floxeen – Make Simple Cleaner.</p>
   </section>
 
   <section class="why">
@@ -221,7 +277,7 @@
   </div>
 
   <footer>
-    <p><strong>Hubungi Kami</strong></p>
+    <p><strong>Hubungi Floxeen</strong></p>
     <p>
       Instagram: <a href="https://instagram.com/floxeen.id" target="_blank">@floxeen.id</a> |
       Shopee: <a href="https://shopee.co.id/floxeen.id" target="_blank">floxeen.id</a>
@@ -246,8 +302,7 @@
       current = (current + 1) % slides.length;
       showSlide(current);
     }
-    setInterval(nextSlide, 3000);
+    setInterval(nextSlide, 3500);
   </script>
-
 </body>
 </html>
